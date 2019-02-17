@@ -1,0 +1,97 @@
+html{
+height:100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+body {
+background-image:"/assets/images/daylightForest.jpg";
+background-size:cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+img {
+  object-fit:cover;
+  width: 100%;
+  height:100%;
+}
+
+
+span {
+  border: 1px, solid gray;
+  border-radius: 4px;
+  font-size: small;
+  margin-top:50px;
+  padding:5px;
+  color: gray;
+  background:khaki;
+}
+
+hr {
+  margin:5px;
+  padding-bottom: 5px;
+  color: green
+}
+
+
+.letter {
+  width: 30px;
+  height: 30px;
+  border-style: 1px, solid;
+  padding: 2px;
+  float: right;
+  margin: 2px;
+  color: gray;
+}
+
+
+.letter-button-color {
+  color: black;
+}
+
+
+.cmd-button{
+  border-radius: 8px;
+  background:lightcoral;
+  margin: 20px;
+}
+
+
+.card-title{
+  margin-top:15px;
+  padding: 0px;
+  color: gray;
+}
+
+#buttons {
+  display: inline-block;
+  margin:30px;
+} 
+
+
+#game-container {
+  width:550px;
+  height: 250px;
+}
+
+
+#img-div{
+width:400px;
+height: 300px;
+overflow: hidden;
+}
+
+
+#clear {
+  margin-left: 20px;
+  font-size: 25px;
+  color: black;
+  border-style: solid;
+  width: 100px;
+}
