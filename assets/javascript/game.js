@@ -111,10 +111,12 @@ $(document).ready(function() {
         }
       });  
       if (!letterFound){
-        var Attempted_letters = $("#letter-guessed").text().concat(" ");
-        Attempted_letters = Attempted_letters.concat(event.key.toUpperCase());
-        $("#letter-guessed").text(Attempted_letters)
-        
+        if (!($("#letter-guessed").text().indexOf(event.key.toUpperCase()) > -1)){
+          var Attempted_letters = $("#letter-guessed").text().concat(" ");
+          Attempted_letters = Attempted_letters.concat(event.key.toUpperCase());
+          $("#letter-guessed").text(Attempted_letters)
+        }
+
         attemptCounter -= 1;
         if (attemptCounter <= 0){
           lossCounter += 1 ;
