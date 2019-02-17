@@ -7,7 +7,7 @@ align-items: center;
 
 
 body {
-background-image:"/assets/images/daylightForest.jpg";
+background-image:url(../images/daylightForest.jpg);
 background-size:cover;
 background-repeat: no-repeat;
 display: flex;
@@ -23,6 +23,15 @@ img {
 }
 
 
+#letter-guessed{
+  display: inline-block;
+  border-radius: 4px;
+  font-size: small;
+  margin:10px;
+  padding:5px;
+  color: gray;
+  /*background:khaki;*/
+}
 span {
   border: 1px, solid gray;
   border-radius: 4px;
@@ -71,7 +80,7 @@ hr {
 
 #buttons {
   display: inline-block;
-  margin:30px;
+  margin:5px;
 } 
 
 

@@ -39,6 +39,7 @@ var gameOver = true
 function InitializeGame(flag){
   //Display the button to play again
   $("#buttons").empty();
+  $("#letter-guessed").empty();
   var cmdBtn = $("<button>");
   cmdBtn.addClass("cmd-button");
   cmdBtn.attr("style","background:lightblue");
@@ -64,7 +65,7 @@ function InitializeGame(flag){
     Animal[11] = new Animal( "Frog","assets/audio/Frog.mp3","assets/images/Frog.jpg","I live in a water or land and hop everywhere");
 
     //set counters to initial state
-    $("#attempt").text("Attempt: " + attemptCounter.toString())
+    $("#attempt").text("Guess Remaining: " + attemptCounter.toString())
     $("#loss").text("Loss: " + lossCounter.toString())
     $("#win").text("Win: " + winCounter.toString())
     cmdBtn.text("Click to Start Game");
@@ -106,8 +107,14 @@ $(document).ready(function() {
           $(this).attr("data-found", true);
           letterFound = true
         }
+        else{
+        }
       });  
       if (!letterFound){
+        var Attempted_letters = $("#letter-guessed").text().concat(" ");
+        Attempted_letters = Attempted_letters.concat(event.key.toUpperCase());
+        $("#letter-guessed").text(Attempted_letters)
+        
         attemptCounter -= 1;
         if (attemptCounter <= 0){
           lossCounter += 1 ;
@@ -116,7 +123,7 @@ $(document).ready(function() {
           gameOver = true;
           InitializeGame("Replay")
         }
-        $("#attempt").text("Attempt: " + attemptCounter.toString())
+        $("#attempt").text("Guess Remaining: " + attemptCounter.toString())
       };
       // check to see if game is over
       success = true;
@@ -132,7 +139,7 @@ $(document).ready(function() {
         winCounter +=1; 
         attemptCounter = 3;
         $("#win").text("Win: " + winCounter.toString())
-        $("#attempt").text("Attempt: " + attemptCounter.toString())
+        $("#attempt").text("Guess Remaining: " + attemptCounter.toString())
 
         //Display animal image
         $("img").attr("src", Animal[selectedIndex].showYourself());
