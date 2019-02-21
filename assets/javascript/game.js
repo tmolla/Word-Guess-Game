@@ -57,7 +57,7 @@ function InitializeGame(flag){
     Animal[3] = new Animal( "Lion","assets/audio/Lion.mp3","assets/images/Lion.jpeg","I am a king");
     Animal[4] = new Animal( "Dog","assets/audio/Dog.mp3","assets/images/Dog.png","I could be your best friend");
     Animal[5] = new Animal( "Pig","assets/audio/Human2.mp3","assets/images/pig.png","Breakfast will not be the same without me");
-    Animal[6] = new Animal( "Cow","assets/audio/Cow.mp3","assets/images/Cow.jpeg","I love grass");
+    Animal[6] = new Animal( "Cow","assets/audio/Cow.mp3","assets/images/Cow.png","I love grass");
     Animal[7] = new Animal( "Turkey","assets/audio/Turkey.mp3","assets/images/Turkey.jpeg","I am a bird named after a country");
     Animal[8] = new Animal( "Raccoon","assets/audio/Raccoon.mp3","assets/images/Raccoon.jpeg", "I look like a bandit");
     Animal[9] = new Animal( "Monkey","assets/audio/Monkey.mp3","assets/images/Monkey.jpeg","I could be your ancesstor");
