@@ -29,7 +29,7 @@ var Animals = [];
 var selectedAnimalName = ""
 var winCounter = 0;
 var lossCounter = 0;
-var attemptCounter = 3;
+var attemptCounter = 9;
 var letterFound = false;
 var selectedIndex = ""
 var gameOver = true
@@ -51,18 +51,18 @@ function InitializeGame(flag){
   else{ //game is starting first time
 
     //Create animals
-    Animal[0] = new Animal("HUMAN", "assets/audio/Human.mp3", "assets/images/human.jpg", "You may be one!");
-    Animal[1] = new Animal( "Rooster","assets/audio/Rooster.mp3","assets/images/Rooster.jpg","Early bird");
-    Animal[2] = new Animal( "Duck","assets/audio/Duck.mp3","assets/images/Duck.jpg","I am a bird and love water");
-    Animal[3] = new Animal( "Lion","assets/audio/Lion.mp3","assets/images/Lion.jpg","I am a king");
-    Animal[4] = new Animal( "Dog","assets/audio/Dog.mp3","assets/images/Dog.jpg","I could be your best friend");
-    Animal[5] = new Animal( "Pig","assets/audio/Human2.mp3","assets/images/pig.jpg","Breakfast will not be the same without me");
-    Animal[6] = new Animal( "Cow","assets/audio/Cow.mp3","assets/images/Cow.jpg","I love grass");
-    Animal[7] = new Animal( "Turkey","assets/audio/Turkey.mp3","assets/images/Turkey.jpg","I am a bird named after a country");
-    Animal[8] = new Animal( "Raccoon","assets/audio/Raccoon.mp3","assets/images/Raccoon.jpg", "I look like a bandit");
-    Animal[9] = new Animal( "Monkey","assets/audio/Monkey.mp3","assets/images/Monkey.jpg","I could be your ancesstor");
-    Animal[10] = new Animal( "Elk","assets/audio/Elk.mp3","assets/images/Elk.jpg","I have massive horn that look like tree branches");
-    Animal[11] = new Animal( "Frog","assets/audio/Frog.mp3","assets/images/Frog.jpg","I live in a water or land and hop everywhere");
+    Animal[0] = new Animal("HUMAN", "assets/audio/Human.mp3", "assets/images/human.jpeg", "You may be one!");
+    Animal[1] = new Animal( "Rooster","assets/audio/Rooster.mp3","assets/images/Rooster.jpeg","Early bird");
+    Animal[2] = new Animal( "Duck","assets/audio/Duck.mp3","assets/images/Duck.jpeg","I am a bird and love water");
+    Animal[3] = new Animal( "Lion","assets/audio/Lion.mp3","assets/images/Lion.jpeg","I am a king");
+    Animal[4] = new Animal( "Dog","assets/audio/Dog.mp3","assets/images/Dog.png","I could be your best friend");
+    Animal[5] = new Animal( "Pig","assets/audio/Human2.mp3","assets/images/pig.png","Breakfast will not be the same without me");
+    Animal[6] = new Animal( "Cow","assets/audio/Cow.mp3","assets/images/Cow.jpeg","I love grass");
+    Animal[7] = new Animal( "Turkey","assets/audio/Turkey.mp3","assets/images/Turkey.jpeg","I am a bird named after a country");
+    Animal[8] = new Animal( "Raccoon","assets/audio/Raccoon.mp3","assets/images/Raccoon.jpeg", "I look like a bandit");
+    Animal[9] = new Animal( "Monkey","assets/audio/Monkey.mp3","assets/images/Monkey.jpeg","I could be your ancesstor");
+    Animal[10] = new Animal( "Elk","assets/audio/Elk.mp3","assets/images/Elk.jpeg","I have massive horn that look like tree branches");
+    Animal[11] = new Animal( "Frog","assets/audio/Frog.mp3","assets/images/Frog.jpeg","I live in a water or land and hop everywhere");
 
     //set counters to initial state
     $("#attempt").text("Guess Remaining: " + attemptCounter.toString())
