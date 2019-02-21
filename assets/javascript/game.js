@@ -120,7 +120,7 @@ $(document).ready(function() {
         attemptCounter -= 1;
         if (attemptCounter <= 0){
           lossCounter += 1 ;
-          attemptCounter = 3;
+          attemptCounter = 9;
           $("#loss").text("Loss: " + lossCounter.toString())
           gameOver = true;
           InitializeGame("Replay")
@@ -139,7 +139,7 @@ $(document).ready(function() {
       if (success){  // check if successful - all letters are guessed correctly
         //display new statsstats
         winCounter +=1; 
-        attemptCounter = 3;
+        attemptCounter = 9;
         $("#win").text("Win: " + winCounter.toString())
         $("#attempt").text("Guess Remaining: " + attemptCounter.toString())
 
